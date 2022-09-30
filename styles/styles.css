@@ -1,0 +1,105 @@
+/* header - The header container */
+.header{
+    display: flex;
+    background-color: rgba(38, 76, 148, 0.596);
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+/* header-title - The title in the header. */
+.header-title{
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+    letter-spacing: 10px;
+}
+
+/* calculator-container - The main container for the calculator. */
+.calculator-container{
+    display: flex;
+    flex-direction: column; 
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid black;
+    width: 380px;
+    margin: 100px auto;
+}
+.item-one{ /* Will contain the calculator-screen. */
+    flex: auto;
+    border: 1px solid black;
+    height: 60px;
+}
+
+.item-two{ /* Will contain the calculator-operator-pad and calculator-number-pad. */
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid black;
+}
+.item-two div{
+    flex: auto;
+    /* border: 1px solid black; */
+}
+
+/* calculator-operator-pad - The operator pad in the item-two container. */
+.calculator-operator-pad{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid black;
+}
+.calculator-operator-pad div{
+    flex: auto;
+    width: 50px; 
+    height: 50px;
+    text-align: center;
+}
+.operator-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.equal-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.clear-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* calculator-number-pad - The number pad in the item-two container. */
+.calculator-number-pad {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid black;
+}
+.calculator-number-pad div{
+    flex: auto;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.number-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* calculator-screen - The display screen for the calculator. */
+.calculator-screen{
+    text-align: right;
+    /* border: 1px solid black; */
+    margin-top: 25px;
+    font-size: 30px;
+}
